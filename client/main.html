@@ -1,0 +1,20 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Mexican Style</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-scroll">
+  {{> main}}
+</body>
+
+<template name="main">
+  {{> navbar}}
+  <div class="wrapper">
+    {{> header}}
+    {{> firstSlide}}
+    {{> secondSlide}}
+    {{> thirdSlide}}
+    {{> contact}}
+  </div>
+
+</template>

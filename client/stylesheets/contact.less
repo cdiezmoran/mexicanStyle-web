@@ -1,0 +1,66 @@
+@import './colors.less';
+
+.contact {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  background-color: @color-flatBlack;
+  z-index: 100;
+}
+
+.slide-title-c {
+  font-family: "Open Sans";
+  font-size: 3rem;
+  padding-top: 50px;
+  margin-bottom: 25px;
+}
+
+.contact-divider {
+  height: 4px;
+  width: 8%;
+  background-color: @color-flatYellow;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.contact-icon {
+  i {
+    transition: color 0.3s ease-out;
+  }
+}
+
+.contact-icon.phone:hover {
+  i {
+    color: @color-flatGreen;
+    transition: color 0.3s ease-out;
+  }
+}
+
+.contact-icon.email:hover {
+  i {
+    color: @color-flatRed;
+    transition: color 0.3s ease-out;
+  }
+}
+
+.contact-icon.location:hover {
+  i {
+    color: @color-flatSkyBlue;
+    transition: color 0.3s ease-out;
+  }
+}
+
+.icon-a, .icon-a:focus {
+  color: white;
+  transition: color 0.3s ease-out;
+}
+
+.icon-a.twitter:hover {
+  color: #00aced;
+  transition: color 0.3s ease-out;
+}
+
+.icon-a.facebook:hover {
+  color: #3b5998;
+  transition: color 0.3s ease-out;
+}
