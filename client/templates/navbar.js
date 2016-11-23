@@ -16,10 +16,10 @@ Template.navbar.onRendered(() => {
 
       $("#nav-ul").children().last().addClass("active");
     }
-    else if ($(window).scrollTop() + $(window).height() >= $(document).height() - 30 && $(window).scrollTop() + $(window).height() <= $(document).height() - 10) {
+    else if ($(window).scrollTop() + $(window).height() >= $(document).height() - 60 && $(window).scrollTop() + $(window).height() <= $(document).height() - 10) {
       $("#nav-ul").children().last().removeClass("active");
       $("#nav-ul").children().each((index, item) => {
-        if (index == 2) {
+        if (index == 3) {
           $(item).addClass("active")
         }
       })
@@ -36,5 +36,11 @@ Template.navbar.events({
     e.preventDefault();
 
     $("html, body").animate({ scrollTop: $(document).height() }, 0);
+  },
+  'click .js-productos'(e) {
+    $("#nav-ul").children().each((index, item) => {
+      $(item).removeClass("active");
+    });
+    $('.js-productos').parent().addClass("active");
   }
 });
